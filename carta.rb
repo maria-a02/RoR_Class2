@@ -6,15 +6,15 @@ class Card
             @number = number
             @kind = kind
         else
-            raise "Nada que ver"
+            raise "Incorrect."
         end
     end
     
     def to_s
-        "Número #{self.number}, Pinta #{self.kind}"
+        "Number #{self.number}, Kind #{self.kind}"
     end
 end
 
-results = []
-5.times { |i| results.push Card.new(rand(1..13), ["C", "D", "T", "E"].sample)}
-puts results
+# results = []
+# 5.times { |i| results.push Card.new(rand(1..13), ["C", "D", "T", "E"].sample)}
+# puts results
